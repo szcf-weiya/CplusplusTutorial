@@ -1,5 +1,7 @@
 # CplusplusTutorial
 
+**All TUTORIALS ARE FROM http://mindview.net/Books/TICPP/ThinkingInCPP2e.html**
+
 1. [Introduction to Objects](html/Chapter01.html)
 2. [Making &amp; Using Objects](html/Chapter02.html)
 3. [The C in C++](html/Chapter03.html)
