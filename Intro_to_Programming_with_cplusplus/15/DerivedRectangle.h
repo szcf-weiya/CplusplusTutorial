@@ -4,6 +4,7 @@
 
 class Rectangle: public GeometricObject
 {
+ public:
   Rectangle();
   Rectangle(double width, double height);
   Rectangle(double width, double height, const string& color, bool filled);
