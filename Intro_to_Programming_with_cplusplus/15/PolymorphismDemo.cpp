@@ -21,5 +21,5 @@ int main()
   Rectangle rectangle(4, 6);
   displayGeometricObject(rectangle);
 
-  return 0;g
+  return 0;
 }
