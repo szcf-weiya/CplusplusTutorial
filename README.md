@@ -12,4 +12,4 @@
 8. [Constants](http://hohoweiya.xyz/CplusplusTutorial/html/Chapter08.html)
 9. [Inline Functions](http://hohoweiya.xyz/CplusplusTutorial/html/Chapter09.html)
 10. [Name Control](http://hohoweiya.xyz/CplusplusTutorial/html/Chapter10.html)
-15. [Polymorphism &amp;  Virtual Functions](http://hohoweiya.xyz/CplusplusTutorial/html/Chapter15.html)
+15. [Polymorphism and Virtual Functions](http://hohoweiya.xyz/CplusplusTutorial/html/Chapter15.html)
