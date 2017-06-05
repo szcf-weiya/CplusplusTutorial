@@ -1,0 +1,22 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+class Pet{
+public:
+  virtual string speak() const {return "";}
+};
+
+class Dog : public Pet {
+public:
+  string speak() const {return "Bark!";}
+};
+
+int main(){
+  Dog* p1 = &ralph;
+  Pet& p2 = ralph;
+  Pet p3;
+  cout << p1 << endl
+       << p2 << endl
+       << p3 << endl;
+}
