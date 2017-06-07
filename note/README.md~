@@ -1,0 +1,8 @@
+# chap 5
+
+## nested friends
+
+1. declare (without defining) the nested structure
+2. declare it as a friend
+3. define the structure
+
