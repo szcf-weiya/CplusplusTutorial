@@ -1,6 +1,7 @@
 # include <iostream>
 # include <string>
 using namespace std;
+/*
 template<typename T>
 void sort(T list[], int listsize)
 {
@@ -35,9 +36,28 @@ void printArray(const T list[], int listSize)
     cout << list[i] << " ";
   cout << endl;
 }
+*/
+
+template<typename T>
+void swap(T& var1, T& var2)
+{
+  T tmp = var1;
+  var1 = var2;
+  var2 = tmp;
+}
+
+/*
+void swap(int& var1, int& var2)
+{
+  int tmp = var1;
+  var1 = var2;
+  var2 = tmp;
+}
+*/
 
 int main()
 {
+  /*
   int list1[] = {3, 5, 1, 0, 2, 8, 7};
   sort(list1, 7);
   printArray(list1, 7);
@@ -49,5 +69,11 @@ int main()
   string list3[] = {"Atlanta", "Denver", "Chicago", "Dallas"};
   sort(list3, 4);
   printArray(list3, 4);
+*/
+  int v1 = 1;
+  int v2 = 2;
+  swap(v1, v2);
+  cout << v1 << " " << v2 << endl;
+  
   return 0;
 }

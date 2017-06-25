@@ -6,6 +6,7 @@ class Stack
 {
 public:
   Stack();
+  ~Stack();
   bool empty() const;
   T peek() const;
   void push(T value);
@@ -50,6 +51,12 @@ template<typename T>
 int Stack<T>::getSize() const
 {
   return size;
+}
+
+template<typename T>
+Stack<T>::~Stack()
+{
+  delete [] elements;
 }
 
 #endif
