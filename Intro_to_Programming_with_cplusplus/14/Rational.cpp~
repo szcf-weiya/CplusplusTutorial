@@ -1,0 +1,58 @@
+#include "Rational.h"
+#include <sstream>
+#include <cstdlib>
+Rational::Rational()
+{
+  numerator = 0;
+  denominator = 1;
+}
+
+Rational::Rational(int numerator, int denominator)
+{
+  int factor = gcd(numerator, denominator);
+  this->numerator = ((denominator > 0) ? 1:-1) * numerator/factor;
+  this->denominator = abs(denominator)/factor;
+}
+
+int Rational::getNumerator() const
+{
+  return numerator;
+}
+
+int Rational::getDenominator() const
+{
+  return denominator;
+}
+
+int Rational::gcd(int n, int d)
+{
+  int n1 = abs(n);
+  int n2 = abs(d);
+  int gcd = 1;
+
+  for (int k = 1; k <= n1 && k <= n2; k++)
+    {
+      if (n1%k == 0 && n2%k == 0)
+	gcd = k;
+    }
+
+  return gcd;
+}
+
+Rational Rational::add(const Rational& secondRational) const
+{
+  int n = numerator*secondRational.getDenominator() +
+    denominator*secondRational.getNumerator();
+  int d = denominator*secondRational.getDenominator();
+  return Rational(n, d);
+}
+
+
+Rational Rational::subtract(const Rational& secondRational) const
+{
+  int n = numerator*secondRational.getDenominator() -
+    denominator*secondRational.getNumerator();
+  int d = denominator*secondRational.getDenominator();
+  return Rational(n, d);
+}
+

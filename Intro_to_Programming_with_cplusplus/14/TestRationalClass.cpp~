@@ -1,0 +1,13 @@
+#include<iostream>
+#include "Rational.h"
+using namespace std;
+
+int main()
+{
+  Rational r1(4, 2);
+  Rational r2(2, 3);
+
+  cout << r1.toString() << " +  " << r2.toString() << " = " << r1.add(r2).toString() << endl;
+
+  return 0;
+}
