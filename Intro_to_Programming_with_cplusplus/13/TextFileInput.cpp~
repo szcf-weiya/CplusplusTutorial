@@ -1,0 +1,24 @@
+#include<iostream>
+#include<string>
+#include<fstream>
+using namespace std;
+
+int  main()
+{
+  ifstream input("out.txt");
+
+  string firstName;
+  char mi;
+  string lastName;
+  int score;
+
+  input >> firstName >> mi >> lastName >> score >> endl;
+  cout << firstName << mi << lastName << score << endl;
+
+  input >> firstName >> mi >> lastName >> score >> endl;
+  cout << firstName << mi << lastName << score << endl;
+
+
+  input.close();
+  return 0;
+}
