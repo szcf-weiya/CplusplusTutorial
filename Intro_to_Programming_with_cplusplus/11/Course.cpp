@@ -61,3 +61,19 @@ int Course::getNumberOfStudents() const
 {
   return numberOfStudents;
 }
+
+const Course& Course::operator=(const Course& course)
+{
+  if (this !=  &course)
+    {
+      courseName = course.courseName;
+      numberOfStudents = course.numberOfStudents;
+      capacity = course.capacity;
+
+      delete [] this->students;
+
+      students = new string[capacity];
+      for (int i = 0; i < numberOfStudents; i++)
+	students[i] = course.students[i];
+    }
+}

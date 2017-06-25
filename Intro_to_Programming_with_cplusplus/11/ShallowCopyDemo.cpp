@@ -17,14 +17,17 @@ int main()
   */
   
   Course course1("C++", 10);
-  Course course2(course1);
+  Course course2("C", 123);
+  course2 = course1;
+  //Course course2(course1);
 
   course1.addStudent("weiya2");
   course2.addStudent("weiya3");
 
   cout << course1.getStudents()[0] << endl;
   cout << course2.getStudents()[0] << endl;
-  
+
+  cout << course2.getCourseName() << endl;
 
   
   return 0;

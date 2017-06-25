@@ -15,6 +15,7 @@ public:
   void dropStudent(const string& name);
   string* getStudents() const;
   int getNumberOfStudents() const;
+  const Course& operator= (const Course& course);
 private:
   string courseName;
   string* students;
